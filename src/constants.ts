@@ -1,4 +1,4 @@
-import { Challenge, Achievement } from './types.ts';
+import { Challenge, Achievement } from './types';
 
 export const INITIAL_CHALLENGES: Challenge[] = [
   {

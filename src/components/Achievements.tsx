@@ -1,4 +1,4 @@
-import { Achievement } from '../types.ts';
+import { Achievement } from '../types';
 import { Award, Compass, Crown, ZapOff, Lock, CheckCircle2 } from 'lucide-react';
 import { motion } from 'motion/react';
 

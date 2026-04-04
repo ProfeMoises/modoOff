@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Play, Square, Timer as TimerIcon, Award, ZapOff } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { TIMER_OPTIONS } from '../constants.ts';
+import { TIMER_OPTIONS } from '../constants';
 
 interface TimerProps {
   onComplete: (minutes: number) => void;

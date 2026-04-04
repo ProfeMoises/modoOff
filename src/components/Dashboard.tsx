@@ -1,4 +1,4 @@
-import { UserStats } from '../types.ts';
+import { UserStats } from '../types';
 import { Flame, Trophy, Clock, Zap } from 'lucide-react';
 import { motion } from 'motion/react';
 

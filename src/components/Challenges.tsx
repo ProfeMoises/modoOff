@@ -1,4 +1,4 @@
-import { Challenge } from '../types.ts';
+import { Challenge } from '../types';
 import { Footprints, PenLine, MessageSquare, Cloud, BookOpen, Sprout, CheckCircle2, Zap } from 'lucide-react';
 import { motion } from 'motion/react';
 

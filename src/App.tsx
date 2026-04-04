@@ -5,13 +5,13 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import Navigation from './components/Navigation.tsx';
-import Dashboard from './components/Dashboard.tsx';
-import Timer from './components/Timer.tsx';
-import Challenges from './components/Challenges.tsx';
-import Achievements from './components/Achievements.tsx';
-import { INITIAL_CHALLENGES, INITIAL_ACHIEVEMENTS } from './constants.ts';
-import { UserStats, Challenge, Achievement } from './types.ts';
+import Navigation from './components/Navigation';
+import Dashboard from './components/Dashboard';
+import Timer from './components/Timer';
+import Challenges from './components/Challenges';
+import Achievements from './components/Achievements';
+import { INITIAL_CHALLENGES, INITIAL_ACHIEVEMENTS } from './constants';
+import { UserStats, Challenge, Achievement } from './types';
 
 const STORAGE_KEY_STATS = 'planeta-modo-off-stats';
 const STORAGE_KEY_CHALLENGES = 'planeta-modo-off-challenges';
