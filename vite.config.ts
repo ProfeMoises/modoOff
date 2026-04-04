@@ -6,7 +6,7 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: './', // Esto permite que los archivos se carguen relativamente, ideal para GitHub Pages
+    base: '/', // Para páginas de usuario (username.github.io), la base debe ser la raíz absoluta
     plugins: [react(), tailwindcss()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
