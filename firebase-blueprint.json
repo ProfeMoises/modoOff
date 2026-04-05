@@ -1,0 +1,42 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile and progress data",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Unique user ID" },
+        "email": { "type": "string", "description": "User email" },
+        "displayName": { "type": "string", "description": "User display name" },
+        "stats": {
+          "type": "object",
+          "properties": {
+            "totalPoints": { "type": "number" },
+            "currentStreak": { "type": "number" },
+            "totalOffMinutes": { "type": "number" },
+            "completedChallenges": { "type": "number" },
+            "lastActiveDate": { "type": "string", "format": "date-time" }
+          },
+          "required": ["totalPoints", "currentStreak", "totalOffMinutes", "completedChallenges", "lastActiveDate"]
+        },
+        "completedChallengeIds": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of IDs of completed challenges"
+        },
+        "unlockedAchievementIds": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "List of IDs of unlocked achievements"
+        }
+      },
+      "required": ["uid", "email", "stats"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Collection of user profiles and their progress"
+    }
+  }
+}
